@@ -1,17 +1,19 @@
 import './App.css';
-import HomePage from './pages/homepage/homepage.component';
+import HomePage from './pages/homepage/Homepage';
 import { Route, Routes, Link } from 'react-router-dom';
 import HatsPage from './pages/hats/HatsPage';
 import JacketsPage from './pages/jackets/JacketsPage';
 import SneakersPage from './pages/sneakers/SneakersPage';
 import MensPage from './pages/mens/MensPage';
 import WomensPage from './pages/womens/WomensPage';
+import ShopPage from './pages/shop/ShopPage';
 
 function App() {
   return (
     <div>
     <Routes>
       <Route exact path='/' element={<HomePage />} />
+      <Route path='/shop' element={<ShopPage />} />
       <Route path='/shop/hats' element={<HatsPage />} />
       <Route path='/shop/jackets' element={<JacketsPage />} />
       <Route path='/shop/sneakers' element={<SneakersPage />} />
