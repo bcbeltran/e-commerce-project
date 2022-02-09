@@ -13,7 +13,6 @@ class ShopPage extends React.Component {
 
         return (
 			<div className='shop-page'>
-				<Link to="/">Home</Link>
 				{
                     this.state.collections.map(({id, ...otherCollectionProps}) => {
                     return <CollectionPreview key ={id} {...otherCollectionProps} />

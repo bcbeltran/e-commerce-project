@@ -7,10 +7,12 @@ import SneakersPage from './pages/sneakers/SneakersPage';
 import MensPage from './pages/mens/MensPage';
 import WomensPage from './pages/womens/WomensPage';
 import ShopPage from './pages/shop/ShopPage';
+import Header from './components/header/Header';
 
 function App() {
   return (
     <div>
+    <Header />
     <Routes>
       <Route exact path='/' element={<HomePage />} />
       <Route path='/shop' element={<ShopPage />} />
