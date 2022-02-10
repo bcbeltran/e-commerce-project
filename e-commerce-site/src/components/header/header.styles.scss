@@ -3,34 +3,36 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  align-items: center;
+  margin-bottom: 100px;
   margin-top: 0;
   font-size: 3vw;
 
   .logo-container {
     height: 100%;
     width: 180px;
-    margin-top: 0;
-    padding: 10px 30px;
+    margin: 0;
+    padding: 0px;
   }
 
   .options {
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 80px;
     padding: 0;
 
     .option {
-      padding: 5px;
+      padding: 5px 0;
+      margin-right: 0;
       cursor: pointer;
     }
 
     .logo2 {
-      width: 28px;
-      padding: 5px;
+      width: 33px;
+      padding: 10px;
     }
   }
 }
