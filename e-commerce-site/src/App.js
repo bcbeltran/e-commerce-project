@@ -8,6 +8,7 @@ import MensPage from './pages/mens/MensPage';
 import WomensPage from './pages/womens/WomensPage';
 import ShopPage from './pages/shop/ShopPage';
 import Header from './components/header/Header';
+import SignInSignUpPage from './pages/sign-in-and-sign-up/SignInSignUpPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Header />
     <Routes>
       <Route exact path='/' element={<HomePage />} />
+      <Route exact path='/signin' element={<SignInSignUpPage />} />
       <Route path='/shop' element={<ShopPage />} />
       <Route path='/shop/hats' element={<HatsPage />} />
       <Route path='/shop/jackets' element={<JacketsPage />} />
